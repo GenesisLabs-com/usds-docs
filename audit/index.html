@@ -12,9 +12,13 @@
         <meta name="author" content="Google">
       
       
-        <link rel="canonical" href="https://google.github.io/usds/web/">
+        <link rel="canonical" href="https://google.github.io/usds/audit/">
       
       
+        <link rel="prev" href="../thesis/">
+      
+      
+        <link rel="next" href="../blog/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>WebView wrapper for Jetpack Compose - USDS</title>
+        <title>Audit - USDS</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#webview-wrapper-for-jetpack-compose" class="md-skip">
+        <a href="#usds-smart-contract-audit" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WebView wrapper for Jetpack Compose
+              Audit
             
           </span>
         </div>
@@ -245,10 +249,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../audit/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Audit
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -259,6 +285,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audit-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Audit Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Key Findings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informational-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Informational Findings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Methodology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notable-improvements-post-audit" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Notable Improvements Post-Audit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-the-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏢 About the Auditor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-audit-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      📎 Full Audit Report
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -630,51 +739,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
+  <a href="#audit-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage
+      🔍 Audit Overview
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#webview-settings-including-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      WebView settings including JavaScript
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#capturing-back-presses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Capturing back presses
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-a-subclass-of-webview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using a subclass of WebView
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
+  <a href="#key-findings" class="md-nav__link">
     <span class="md-ellipsis">
-      Download
+      ✅ Key Findings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informational-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Informational Findings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Methodology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notable-improvements-post-audit" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Notable Improvements Post-Audit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-the-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏢 About the Auditor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-audit-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      📎 Full Audit Report
     </span>
   </a>
   
@@ -699,56 +820,102 @@
   
 
 
-<h1 id="webview-wrapper-for-jetpack-compose">WebView wrapper for Jetpack Compose<a class="headerlink" href="#webview-wrapper-for-jetpack-compose" title="Permanent link">&para;</a></h1>
-<p><a href="https://search.maven.org/search?q=g:com.google.accompanist"><img alt="Maven Central" src="https://img.shields.io/maven-central/v/com.google.accompanist/accompanist-webview" /></a></p>
-<p>A library which provides a Jetpack Compose wrapper around Android's WebView.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>This library is deprecated, and the API is no longer maintained. We recommend forking the implementation and customising it to your needs.</strong> The original documentation is below.</p>
-</div>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>To implement this wrapper there are two key APIs which are needed: <a href="../api/web/com.google.accompanist.web/-web-view.html"><code>WebView</code></a>, which is provides the layout, and <a href="../api/web/com.google.accompanist.web/remember-web-view-state.html"><code>rememberWebViewState(url)</code></a> which provides some remembered state including the URL to display.</p>
-<p>The basic usage is as follows:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberWebViewState</span><span class="p">(</span><span class="s">&quot;https://example.com&quot;</span><span class="p">)</span>
-
-<span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="n">state</span>
-<span class="p">)</span>
-</code></pre></div>
-<p>This will display a WebView in your Compose layout that shows the URL provided.</p>
-<p>There is a larger sample in the sample app which can be found <a href="https://github.com/google/accompanist/blob/main/sample/src/main/java/com/google/accompanist/sample/webview/BasicWebViewSample.kt">here</a>. This sample also shows how to show a loading state.</p>
-<h3 id="webview-settings-including-javascript">WebView settings including JavaScript<a class="headerlink" href="#webview-settings-including-javascript" title="Permanent link">&para;</a></h3>
-<p>By default, JavaScript is disabled in the WebView. To enable it or any other settings you can use the <code>onCreated</code> callback.</p>
-<div class="highlight"><pre><span></span><code><span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">webViewState</span><span class="p">,</span>
-<span class="w">    </span><span class="n">onCreated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">settings</span><span class="p">.</span><span class="na">javaScriptEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
-<span class="p">)</span>
-</code></pre></div>
-<h3 id="capturing-back-presses">Capturing back presses<a class="headerlink" href="#capturing-back-presses" title="Permanent link">&para;</a></h3>
-<p>By default the WebView will capture back presses/swipes when relevant and navigate the WebView back. This can be disabled via the parameter on 
-the Composable.</p>
-<div class="highlight"><pre><span></span><code><span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="p">...</span>
-<span class="w">    </span><span class="n">captureBackPresses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
-<span class="p">)</span>
-</code></pre></div>
-<h3 id="using-a-subclass-of-webview">Using a subclass of WebView<a class="headerlink" href="#using-a-subclass-of-webview" title="Permanent link">&para;</a></h3>
-<p>If you want to use a subclass of <code>WebView</code>, or simply require more control over its instantiation, you can provide a factory.</p>
-<div class="highlight"><pre><span></span><code><span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="p">...</span>
-<span class="w">    </span><span class="n">factory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">CustomWebView</span><span class="p">(</span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
-<span class="p">)</span>
-</code></pre></div>
-<h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
-<p><a href="https://search.maven.org/search?q=g:com.google.accompanist"><img alt="Maven Central" src="https://img.shields.io/maven-central/v/com.google.accompanist/accompanist-webview" /></a></p>
-<div class="highlight"><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="o">{</span>
-<span class="w">    </span><span class="n">mavenCentral</span><span class="o">()</span>
-<span class="o">}</span>
-
-<span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
-<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s2">&quot;com.google.accompanist:accompanist-webview:&lt;version&gt;&quot;</span>
-<span class="o">}</span>
-</code></pre></div>
+<h1 id="usds-smart-contract-audit">USDS Smart Contract Audit<a class="headerlink" href="#usds-smart-contract-audit" title="Permanent link">&para;</a></h1>
+<p>This page summarizes the findings from the third-party audit of the USDS Protocol (v1.0.0), specifically focusing on the <code>IdentityDepository</code> smart contract, conducted by <strong>Genesis IT Lab</strong>.</p>
+<h2 id="audit-overview">🔍 Audit Overview<a class="headerlink" href="#audit-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Auditor</strong>: Genesis IT Lab  </li>
+<li><strong>Date</strong>: June 5, 2025  </li>
+<li><strong>Scope</strong>: IdentityDepository (Solana program)  </li>
+<li><strong>Focus Areas</strong>:</li>
+<li>Redemption logic</li>
+<li>Authority enforcement</li>
+<li>Vault routing</li>
+<li>Arithmetic safety</li>
+</ul>
+<blockquote>
+<p>Note: Mint flow logic and other modules were out of scope for this audit phase.</p>
+</blockquote>
+<hr />
+<h2 id="key-findings">✅ Key Findings<a class="headerlink" href="#key-findings" title="Permanent link">&para;</a></h2>
+<ul>
+<li>✅ <strong>No critical or high-severity vulnerabilities were found</strong></li>
+<li>✅ <strong>Signer checks and controller authority are properly enforced</strong></li>
+<li>✅ <strong>Vault selection for USDC and USDT is safely routed</strong></li>
+<li>✅ <strong>Checked arithmetic prevents overflows</strong></li>
+<li>✅ <strong>Redemption follows a secure burn-first, transfer-second model</strong></li>
+<li>⚠️ Minor informational issues were resolved or acknowledged</li>
+</ul>
+<hr />
+<h2 id="informational-findings">📄 Informational Findings<a class="headerlink" href="#informational-findings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Description</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I-1</td>
+<td>Correct enforcement of redeem authority through controller</td>
+<td>Resolved</td>
+</tr>
+<tr>
+<td>I-2</td>
+<td>Sequential, atomic redemption process ensures stability</td>
+<td>Resolved</td>
+</tr>
+<tr>
+<td>I-3</td>
+<td>Safe dual-vault routing for USDC and USDT</td>
+<td>Resolved</td>
+</tr>
+<tr>
+<td>I-4</td>
+<td>Overflow/underflow resistance using safe arithmetic</td>
+<td>Resolved</td>
+</tr>
+<tr>
+<td>I-5</td>
+<td>Input validation before execution</td>
+<td>Resolved</td>
+</tr>
+<tr>
+<td>I-6</td>
+<td>Decimal check for token mints not enforced at runtime</td>
+<td>Acknowledged (future improvement)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="methodology">🛠 Methodology<a class="headerlink" href="#methodology" title="Permanent link">&para;</a></h2>
+<p>Genesis IT Lab used:
+- Manual source code inspection
+- Static analysis tools
+- Access control review
+- Smart contract logic validation
+- Formal security checklist (inspired by OWASP &amp; blockchain standards)</p>
+<p>Code quality, design modularity, and mathematical integrity were all reviewed against known patterns in Solana smart contract development.</p>
+<hr />
+<h2 id="notable-improvements-post-audit">🧠 Notable Improvements Post-Audit<a class="headerlink" href="#notable-improvements-post-audit" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Improved signer and controller enforcement</li>
+<li>Eliminated redundant passthrough accounts</li>
+<li>Optimized logic for collateral vault management</li>
+<li>Recommended runtime mint decimal verification</li>
+</ul>
+<hr />
+<h2 id="about-the-auditor">🏢 About the Auditor<a class="headerlink" href="#about-the-auditor" title="Permanent link">&para;</a></h2>
+<p><strong>Genesis IT Lab</strong> is a blockchain R&amp;D and security firm specializing in Solana and EVM ecosystems. The team applies rigorous manual review, fuzzing, and formal methods to detect smart contract vulnerabilities.</p>
+<blockquote>
+<p>Learn more at <a href="#">genesisitlab.io</a> (placeholder)</p>
+</blockquote>
+<hr />
+<h2 id="full-audit-report">📎 Full Audit Report<a class="headerlink" href="#full-audit-report" title="Permanent link">&para;</a></h2>
+<p>You can download or view the full audit report here:</p>
+<p><a href="../files/USDSAuditReportV1.0.0.pdf">📄 View Audit Report (PDF)</a></p>
 
 
 

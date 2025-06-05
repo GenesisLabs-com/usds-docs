@@ -12,24 +12,28 @@
         <meta name="author" content="Google">
       
       
-        <link rel="canonical" href="https://google.github.io/usds/web/">
+        <link rel="canonical" href="https://google.github.io/usds/technical/contracts/">
       
       
+        <link rel="prev" href="../../protocol/stability/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+        <link rel="next" href="../security/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>WebView wrapper for Jetpack Compose - USDS</title>
+        <title>Smart Contracts - USDS</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#webview-wrapper-for-jetpack-compose" class="md-skip">
+        <a href="#smart-contracts-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="USDS" class="md-header__button md-logo" aria-label="USDS" data-md-component="logo">
+    <a href="../.." title="USDS" class="md-header__button md-logo" aria-label="USDS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WebView wrapper for Jetpack Compose
+              Smart Contracts
             
           </span>
         </div>
@@ -186,7 +190,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="USDS" class="md-nav__button md-logo" aria-label="USDS" data-md-component="logo">
+    <a href="../.." title="USDS" class="md-nav__button md-logo" aria-label="USDS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -204,7 +208,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -226,7 +230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../thesis/" class="md-nav__link">
+      <a href="../../thesis/" class="md-nav__link">
         
   
   
@@ -248,7 +252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../audit/" class="md-nav__link">
+      <a href="../../audit/" class="md-nav__link">
         
   
   
@@ -308,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   
@@ -331,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blog/design/" class="md-nav__link">
+      <a href="../../blog/design/" class="md-nav__link">
         
   
   
@@ -354,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blog/tokenomics/" class="md-nav__link">
+      <a href="../../blog/tokenomics/" class="md-nav__link">
         
   
   
@@ -422,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/architecture/" class="md-nav__link">
+      <a href="../../protocol/architecture/" class="md-nav__link">
         
   
   
@@ -445,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/stability/" class="md-nav__link">
+      <a href="../../protocol/stability/" class="md-nav__link">
         
   
   
@@ -472,18 +476,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -499,7 +505,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Technical Reference
@@ -510,10 +516,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../technical/contracts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Smart Contracts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -524,6 +552,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Key Contracts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Key Contracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-identity_depositoryrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. identity_depository.rs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mint_with_identity_depositoryrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. mint_with_identity_depository.rs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-redeem_from_identity_depositoryrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. redeem_from_identity_depository.rs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-controllerrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. controller.rs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Additional Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Testing and Deployment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../technical/security/" class="md-nav__link">
+      <a href="../security/" class="md-nav__link">
         
   
   
@@ -566,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   
@@ -588,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   
@@ -630,37 +747,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
+  <a href="#key-contracts" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage
+      🧩 Key Contracts
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Usage">
+    <nav class="md-nav" aria-label="🧩 Key Contracts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#webview-settings-including-javascript" class="md-nav__link">
+  <a href="#1-identity_depositoryrs" class="md-nav__link">
     <span class="md-ellipsis">
-      WebView settings including JavaScript
+      1. identity_depository.rs
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#capturing-back-presses" class="md-nav__link">
+  <a href="#2-mint_with_identity_depositoryrs" class="md-nav__link">
     <span class="md-ellipsis">
-      Capturing back presses
+      2. mint_with_identity_depository.rs
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-a-subclass-of-webview" class="md-nav__link">
+  <a href="#3-redeem_from_identity_depositoryrs" class="md-nav__link">
     <span class="md-ellipsis">
-      Using a subclass of WebView
+      3. redeem_from_identity_depository.rs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-controllerrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. controller.rs
     </span>
   </a>
   
@@ -672,9 +798,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
+  <a href="#additional-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Download
+      🛠 Additional Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Testing and Deployment
     </span>
   </a>
   
@@ -699,56 +834,70 @@
   
 
 
-<h1 id="webview-wrapper-for-jetpack-compose">WebView wrapper for Jetpack Compose<a class="headerlink" href="#webview-wrapper-for-jetpack-compose" title="Permanent link">&para;</a></h1>
-<p><a href="https://search.maven.org/search?q=g:com.google.accompanist"><img alt="Maven Central" src="https://img.shields.io/maven-central/v/com.google.accompanist/accompanist-webview" /></a></p>
-<p>A library which provides a Jetpack Compose wrapper around Android's WebView.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>This library is deprecated, and the API is no longer maintained. We recommend forking the implementation and customising it to your needs.</strong> The original documentation is below.</p>
-</div>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>To implement this wrapper there are two key APIs which are needed: <a href="../api/web/com.google.accompanist.web/-web-view.html"><code>WebView</code></a>, which is provides the layout, and <a href="../api/web/com.google.accompanist.web/remember-web-view-state.html"><code>rememberWebViewState(url)</code></a> which provides some remembered state including the URL to display.</p>
-<p>The basic usage is as follows:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberWebViewState</span><span class="p">(</span><span class="s">&quot;https://example.com&quot;</span><span class="p">)</span>
-
-<span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="n">state</span>
-<span class="p">)</span>
-</code></pre></div>
-<p>This will display a WebView in your Compose layout that shows the URL provided.</p>
-<p>There is a larger sample in the sample app which can be found <a href="https://github.com/google/accompanist/blob/main/sample/src/main/java/com/google/accompanist/sample/webview/BasicWebViewSample.kt">here</a>. This sample also shows how to show a loading state.</p>
-<h3 id="webview-settings-including-javascript">WebView settings including JavaScript<a class="headerlink" href="#webview-settings-including-javascript" title="Permanent link">&para;</a></h3>
-<p>By default, JavaScript is disabled in the WebView. To enable it or any other settings you can use the <code>onCreated</code> callback.</p>
-<div class="highlight"><pre><span></span><code><span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">webViewState</span><span class="p">,</span>
-<span class="w">    </span><span class="n">onCreated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">settings</span><span class="p">.</span><span class="na">javaScriptEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
-<span class="p">)</span>
-</code></pre></div>
-<h3 id="capturing-back-presses">Capturing back presses<a class="headerlink" href="#capturing-back-presses" title="Permanent link">&para;</a></h3>
-<p>By default the WebView will capture back presses/swipes when relevant and navigate the WebView back. This can be disabled via the parameter on 
-the Composable.</p>
-<div class="highlight"><pre><span></span><code><span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="p">...</span>
-<span class="w">    </span><span class="n">captureBackPresses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
-<span class="p">)</span>
-</code></pre></div>
-<h3 id="using-a-subclass-of-webview">Using a subclass of WebView<a class="headerlink" href="#using-a-subclass-of-webview" title="Permanent link">&para;</a></h3>
-<p>If you want to use a subclass of <code>WebView</code>, or simply require more control over its instantiation, you can provide a factory.</p>
-<div class="highlight"><pre><span></span><code><span class="n">WebView</span><span class="p">(</span>
-<span class="w">    </span><span class="p">...</span>
-<span class="w">    </span><span class="n">factory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">CustomWebView</span><span class="p">(</span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
-<span class="p">)</span>
-</code></pre></div>
-<h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
-<p><a href="https://search.maven.org/search?q=g:com.google.accompanist"><img alt="Maven Central" src="https://img.shields.io/maven-central/v/com.google.accompanist/accompanist-webview" /></a></p>
-<div class="highlight"><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="o">{</span>
-<span class="w">    </span><span class="n">mavenCentral</span><span class="o">()</span>
-<span class="o">}</span>
-
-<span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
-<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s2">&quot;com.google.accompanist:accompanist-webview:&lt;version&gt;&quot;</span>
-<span class="o">}</span>
-</code></pre></div>
+<h1 id="smart-contracts-overview">Smart Contracts Overview<a class="headerlink" href="#smart-contracts-overview" title="Permanent link">&para;</a></h1>
+<p>The USDS protocol implements a secure and minimal set of smart contracts to manage the minting and redeeming of USDS against stable collateral assets like USDC and USDT. These contracts are deployed on the <strong>Solana blockchain</strong> and built using the <strong>Anchor framework</strong>.</p>
+<hr />
+<h2 id="key-contracts">🧩 Key Contracts<a class="headerlink" href="#key-contracts" title="Permanent link">&para;</a></h2>
+<h3 id="1-identity_depositoryrs">1. <code>identity_depository.rs</code><a class="headerlink" href="#1-identity_depositoryrs" title="Permanent link">&para;</a></h3>
+<p>Defines the core on-chain structure that manages:</p>
+<ul>
+<li>Accepted collateral types</li>
+<li>Minting and redemption vault logic</li>
+<li>Controller authority verification</li>
+<li>Configuration for fees, supply limits, and state</li>
+</ul>
+<hr />
+<h3 id="2-mint_with_identity_depositoryrs">2. <code>mint_with_identity_depository.rs</code><a class="headerlink" href="#2-mint_with_identity_depositoryrs" title="Permanent link">&para;</a></h3>
+<p>Handles the minting flow:</p>
+<ul>
+<li>Validates supported collateral types</li>
+<li>Verifies signer authority</li>
+<li>Calculates and deducts fees</li>
+<li>Transfers collateral to vault</li>
+<li>Mints USDS tokens to the user</li>
+</ul>
+<hr />
+<h3 id="3-redeem_from_identity_depositoryrs">3. <code>redeem_from_identity_depository.rs</code><a class="headerlink" href="#3-redeem_from_identity_depositoryrs" title="Permanent link">&para;</a></h3>
+<p>Handles the redeem flow:</p>
+<ul>
+<li>Burns the correct amount of USDS</li>
+<li>Validates selected collateral type</li>
+<li>Transfers stablecoins from vault to user</li>
+<li>Protects against reentrancy and access misuse</li>
+</ul>
+<hr />
+<h3 id="4-controllerrs">4. <code>controller.rs</code><a class="headerlink" href="#4-controllerrs" title="Permanent link">&para;</a></h3>
+<p>Implements authority logic:</p>
+<ul>
+<li>Governs who can execute privileged instructions (e.g., mint, redeem)</li>
+<li>Can be a multisig, DAO, or centralized authority</li>
+<li>Used to enforce execution constraints via signer validation</li>
+</ul>
+<hr />
+<h2 id="additional-components">🛠 Additional Components<a class="headerlink" href="#additional-components" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Utility modules</strong>:</li>
+<li>PDA derivation</li>
+<li>SPL token interface management</li>
+<li>
+<p>Fee calculations</p>
+</li>
+<li>
+<p><strong>Vault logic</strong>:</p>
+</li>
+<li>Handles separate vault accounts for USDC and USDT</li>
+<li>Routes requests based on user-selected collateral type</li>
+</ul>
+<hr />
+<h2 id="testing-and-deployment">🧪 Testing and Deployment<a class="headerlink" href="#testing-and-deployment" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Written in Rust using the Anchor framework</li>
+<li>Unit and integration tests provided in the <code>/tests/</code> folder</li>
+<li>Deployable to Solana mainnet/testnet using Anchor CLI</li>
+</ul>
+<blockquote>
+<p>View the full source: <a href="https://github.com/usds-protocol/usds">GitHub repository</a> <em>(placeholder)</em></p>
+</blockquote>
 
 
 
@@ -797,10 +946,10 @@ the Composable.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
