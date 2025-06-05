@@ -1,49 +1,37 @@
 # Project information
-site_name: 'Accompanist'
+site_name: 'USDS'
 site_description: 'A group of libraries to help write Jetpack Compose apps.'
 site_author: 'Google'
-site_url: 'https://google.github.io/accompanist/'
+site_url: 'https://google.github.io/usds/'
 edit_uri: 'tree/main/docs/'
 remote_branch: gh-pages
 
-docs_dir: docs-gen
+docs_dir: docs
 
-# Repository
-repo_name: 'Accompanist'
-repo_url: 'https://github.com/google/accompanist'
+
 
 # Navigation
 nav:
-  - 'Overview': index.md
-  - 'System UI Controller':
-    - 'Guide': systemuicontroller.md
-    - 'API': api/systemuicontroller/
-  - 'Drawable Painter':
-    - 'Guide': drawablepainter.md
-    - 'API': api/drawablepainter/ 
-  - 'Permissions':
-    - 'Guide': permissions.md
-    - 'API': api/permissions/
-  - 'Navigation Animation':
-      - 'Guide': navigation-animation.md
-      - 'API': api/navigation-animation/
-  - 'Navigation Material':
-      - 'Guide': navigation-material.md
-      - 'API': api/navigation-material/
-  - 'Adaptive':
-      - 'Guide': adaptive.md
-      - 'API': api/adaptive
-  - 'Snapshots': using-snapshot-version.md
-  - 'Contributing': contributing.md
-  - 'Maintainers':
-    - 'Update guide': updating.md
+  - Overview: index.md
+  - Thesis: thesis.md
+  - Audit: audit.md
+  - Blog:
+      - Introduction: blog/index.md
+      - Design Principles: blog/design.md
+      - Tokenomics: blog/tokenomics.md
+  - Protocol:
+      - Architecture: protocol/architecture.md
+      - Stability Mechanism: protocol/stability.md
+  - Technical Reference:
+      - Smart Contracts: technical/contracts.md
+      - Security Model: technical/security.md
+  - FAQ: faq.md
+  - License: license.md
 
 # Configuration
 theme:
   name: 'material'
   language: 'en'
-  icon:
-    logo: material/music-clef-treble
   palette:
     primary: 'black'
     accent: 'deep orange'
